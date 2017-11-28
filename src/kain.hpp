@@ -33,6 +33,13 @@ struct InPort : SVGPort {
 		box.size = background->box.size;
 	}
 };
+struct InGreen : SVGPort {
+	InGreen() {
+		background->svg = SVG::load(assetPlugin(plugin, "res/components/InGreen.svg"));
+		background->wrap();
+		box.size = background->box.size;
+	}
+};
 // knobs & buttons
 struct SquareButton : SVGSwitch, MomentarySwitch {
 	SquareButton() {
