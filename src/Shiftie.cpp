@@ -133,7 +133,7 @@ ShiftieWidget::ShiftieWidget(){
 	addChild(createLight<MeterLight<GreenLight>>(Vec(8, 43 + 23 * 9), module, Shiftie::METER_LIGHT + 9));
 	// inputs
 	addInput(createInput<InPort>(Vec(3, box.size.y - 44), module, Shiftie::NEG_INPUT));
-	addInput(createInput<InPort>(Vec(3, box.size.y - 74), module, Shiftie::POS_INPUT));
+	addInput(createInput<InGreen>(Vec(3, box.size.y - 74), module, Shiftie::POS_INPUT));
 	// output
 	addOutput(createOutput<OutPort>(Vec(3, box.size.y - 104), module, Shiftie::VAL_OUT));
 }
